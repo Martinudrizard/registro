@@ -1,0 +1,110 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #3edab5; /* Color de fondo claro */
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 36px; /* Tamaño de fuente más grande para el título */
+}
+
+h2 {
+  color: #4caf50; /* Color verde para subtítulos */
+  text-align: center;
+  margin-top: 20px;
+  font-size: 28px; /* Tamaño de fuente más grande para subtítulos */
+}
+
+.form-container,
+.search-container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* Fondo blanco para formularios */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  max-width: 600px; /* Limitar el ancho */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 18px; /* Tamaño de fuente más grande */
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Tamaño de fuente más grande */
+  transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+input:focus {
+  border-color: #4caf50; /* Color del borde al enfocar */
+  outline: none; /* Eliminar el contorno */
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #4caf50; /* Color verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Tamaño de fuente más grande */
+  transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+button:hover {
+  background-color: #45a049; /* Color de fondo al pasar el mouse */
+}
+
+table {
+  width: 90%; /* Aumentar el ancho de la tabla */
+  border-collapse: collapse;
+  margin: 20px auto; /* Centrar la tabla */
+  font-size: 18px; /* Tamaño de fuente más grande para la tabla */
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Espaciado dentro de las celdas */
+  text-align: center;
+}
+
+th {
+  background-color: #4caf50; /* Color de fondo para encabezados */
+  color: white; /* Color de texto para encabezados */
+}
+
+td {
+  background-color: #ffffff; /* Color de fondo blanco para las celdas */
+}
+
+td:nth-child(even) {
+  background-color: #f9f9f9; /* Color alternativo para filas */
+}
+
+td:hover {
+  background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
+
+#results {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px; /* Tamaño de fuente más grande para resultados */
+  color: #333;
+}
+
+.search-container {
+  text-align: center; /* Centrar el formulario de búsqueda */
+}

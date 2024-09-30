@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Martin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Registro Martin</h1>
+    <div class="form-container">
+      <label for="cost">Costo:</label>
+      <input type="number" id="cost" placeholder="Ingrese el costo" required />
+
+      <label for="sale">Precio de Venta:</label>
+      <input
+        type="number"
+        id="sale"
+        placeholder="Ingrese el precio de venta"
+        required
+      />
+
+      <label for="date">Fecha (YYYY-MM-DD):</label>
+      <input type="date" id="date" required />
+
+      <button onclick="saveRecord()">Guardar Registro</button>
+    </div>
+
+    <h2>Registros Guardados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Costo</th>
+          <th>Venta</th>
+          <th>Ganancia</th>
+        </tr>
+      </thead>
+      <tbody id="record-list">
+        <!-- Los registros se añadirán aquí dinámicamente -->
+      </tbody>
+    </table>
+
+    <h2>Búsqueda de Registros</h2>
+    <div class="search-container">
+      <label for="searchDate">Buscar por Fecha (YYYY-MM-DD):</label>
+      <input type="date" id="searchDate" />
+      <button onclick="searchRecord()">Buscar</button>
+    </div>
+
+    <h3>Resultados de Búsqueda:</h3>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
